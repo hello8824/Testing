@@ -170,7 +170,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     port = context.args[1]
     duration = context.args[2]
 
-    command = ['./bgmi', target_ip, port, duration, str(DEFAULT_THREADS)]
+    command = ['./soul', target_ip, port, duration, str(DEFAULT_THREADS)]
 
     process = subprocess.Popen(command)
     
